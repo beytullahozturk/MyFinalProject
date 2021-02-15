@@ -34,7 +34,7 @@ namespace Business.Concrete
         {
             // varsa iş kodları buraya yazılır, yetki burada kontrol edilir
             // bir iş sınıfı başka sınıfları new 'lemez,
-            if (DateTime.Now.Hour == 22)
+            if (DateTime.Now.Hour == 1)
             {
                 return new ErrorDataResult<List<Product>>(Messages.MaintenanceTime);
             }
