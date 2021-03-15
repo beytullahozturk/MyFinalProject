@@ -29,7 +29,7 @@ namespace WebAPI.Controllers
         [HttpGet("getall")]
         public IActionResult GetAll()
         {
-            Thread.Sleep(2000);
+            Thread.Sleep(1000);
             //Dependency Chain
             var result = _productService.GetAll();
             if (result.Success)
